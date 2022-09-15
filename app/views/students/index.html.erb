@@ -30,6 +30,10 @@
   <br>
 
   <%= link_to 'New Student', new_student_path, class:"btn btn-secondary" %>
+  <%= link_to 'Order by First Name', :sort => "first_name" %> |
+  <%= link_to 'Order by Last Name', :sort => "last_name" %> |
+  <%= link_to 'Order by Phone', :sort => "phone" %> |
+  <%= link_to 'Order by Email', :sort => "email" %>
 <% else %>
   <h1>Hello World!</h1>
   This is my first Rails Webpage...
